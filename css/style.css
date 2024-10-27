@@ -1,0 +1,1229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("font-awesome.min.css");
+body {
+  font-family: "poppins", sans-serif;
+  color: #101010;
+  background-color: #ffffff;
+}
+
+/* chuyển đổi ngôn ngữ */
+.language-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.language-switcher button {
+  background-color: #FF004D;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.language-switcher button:hover {
+  background-color: #ff3366;
+}
+
+.rental-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px; /* Increased width for horizontal alignment */
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rental-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Create horizontal layout for form groups */
+.form-group {
+  display: inline-block;
+  margin-right: 20px; /* Space between items */
+  vertical-align: top;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group select, 
+.form-group input {
+  width: 180px; /* Adjust width to fit in a horizontal line */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: calc(100% - 40px); /* Full width with margin */
+  margin: 20px auto 0;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkbox{
+  display: block;
+  text-align: left;
+}
+input[type="checkbox"] {
+  
+  margin: 8px; /* Space it from other elements */
+  
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* nút đăng nhập và đăng ký */
+
+
+.auth-buttons {
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa hai nút */
+}
+
+.auth-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* Màu chữ */
+  transition: background-color 0.3s;
+}
+
+.auth-buttons a i {
+  margin-right: 8px; /* Khoảng cách giữa icon và chữ */
+}
+
+/* Màu sáng hơn cho nút Đăng nhập */
+.btn-login {
+  background-color:#c4b7b1; /* Màu xanh sáng */
+}
+
+/* Màu sáng hơn cho nút Đăng ký */
+.btn-signup {
+  background-color: #c4b7b1; /* Màu cam sáng */
+}
+
+
+/* Make sure the form elements are aligned properly */
+
+.layout_padding {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.layout_padding2 {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.layout_padding2-top {
+  padding-top: 45px;
+}
+
+.layout_padding2-bottom {
+  padding-bottom: 45px;
+}
+
+.layout_padding-top {
+  padding-top: 90px;
+}
+
+.layout_padding-bottom {
+  padding-bottom: 90px;
+}
+
+.heading_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.heading_container h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.heading_container h2 span {
+  color: #608BC1;
+}
+
+.heading_container.heading_center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.destination-box {
+  text-align: center;
+}
+
+.box-img img {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box-img img:hover {
+  transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+}
+
+.box-title p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.box-title img {
+  margin-left: 5px;
+}
+
+
+/*header section*/
+.hero_area {
+  padding: 0 45px;
+}
+
+.hero_area.sub_pages {
+  height: auto;
+}
+/* chỉnh rental form */
+.rental-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ccc; /* Thêm viền cho toàn bộ form */
+}
+
+/* chỉnh hình chỗ destination */
+.destination-box .box-img {
+  width: 100%;
+  height: 250px; /* Đặt chiều cao cố định */
+  overflow: hidden;
+  border-radius: 10px; /* Bo tròn góc hình ảnh, tuỳ chọn */
+}
+
+.destination-box .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo hình ảnh luôn vừa khít với khung */
+  transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi khi hover, tùy chọn */
+}
+
+.destination-box:hover .box-img img {
+  transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Hàng trên có 2 cột */
+  grid-template-rows: auto; /* Chiều cao tự động */
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+.destination-box {
+  overflow: hidden;
+}
+
+.destination-grid .destination-box:nth-child(3),
+.destination-grid .destination-box:nth-child(4),
+.destination-grid .destination-box:nth-child(5) {
+  grid-column: span 1; /* Hàng dưới có 3 cột, mỗi hình chiếm 1 cột */
+}
+
+.destination-grid .destination-box:nth-child(1),
+.destination-grid .destination-box:nth-child(2) {
+  grid-column: span 1; /* Hàng trên có 2 cột, mỗi hình chiếm 1 cột */
+}
+
+.destination-grid:nth-child(3) {
+  grid-column: span 3; /* Đảm bảo rằng các hình ở hàng dưới hiển thị đúng */
+}
+
+.destination-box .box-img {
+  width: 100%;
+  height: 250px; /* Đặt chiều cao cố định cho hình ảnh */
+  object-fit: cover; /* Đảm bảo hình ảnh luôn vừa khít khung mà không bị méo */
+  border-radius: 10px; /* Bo tròn góc của hình ảnh */
+  transition: transform 0.3s ease; /* Hiệu ứng zoom khi hover */
+}
+
+.destination-box .box-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.destination-box:hover .box-img img {
+  transform: scale(1.05); /* Zoom khi hover */
+}
+
+.destination-box .box-title {
+  text-align: center;
+  font-size: 1.2rem; /* Cỡ chữ lớn hơn */
+  margin-top: 10px;
+}
+
+.heading_center h2 {
+  font-size: 2rem; /* Tăng kích thước tiêu đề */
+  margin-bottom: 20px;
+  color: #333; /* Màu chữ tiêu đề */
+}
+
+#navbarSupportedContent {
+  width: 100%;
+  background-color: #f9ece6;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+  border-radius: 15px 15px 0 0;
+}
+
+#navbarSupportedContent.innerpage_navbar {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+#navbarSupportedContent.innerpage_navbar .nav-item.active .nav-link {
+  background-color: #f4f5f6;
+}
+
+#navbarSupportedContent .navbar-nav .nav-link {
+  padding: 5px 25px;
+  color: #514f4f;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+#navbarSupportedContent .nav-item.active .nav-link {
+  background-color: #ffffff;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: initial;
+}
+
+.btn,
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-brand {
+  margin: 15px 0;
+  padding: 0;
+}
+
+.navbar-brand span {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.custom_nav-container .nav_search-btn {
+  padding: 0;
+  border: none;
+}
+
+.custom_nav-container {
+  z-index: 99999;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.custom_nav-container .navbar-toggler {
+  outline: none;
+}
+
+.custom_nav-container .navbar-toggler {
+  outline: none;
+}
+
+.custom_nav-container .navbar-toggler {
+  padding: 0;
+  width: 37px;
+  height: 42px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.custom_nav-container .navbar-toggler span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: #000000;
+  margin: 7px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  top: -10px;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.custom_nav-container .navbar-toggler span::after {
+  top: 10px;
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before, .custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 0;
+}
+
+.user_option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 25px;
+}
+
+.user_option a {
+  margin-right: 25px;
+  color: #000000;
+}
+
+.user_option a span {
+  margin-left: 5px;
+}
+
+/*end header section*/
+.slider_section .slider_container {
+  color: #fefefe;
+  background-color: #000000;
+  background-color: #608BC1;
+  padding: 25px;
+  border-radius: 0 0 15px 15px;
+}
+
+.slider_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider_section .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 45px;
+}
+
+.slider_section .img-box img {
+  width: 275px;
+}
+
+.slider_section .detail-box {
+  padding-left: 45px;
+  margin: 45px 0;
+}
+
+.slider_section .detail-box h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.slider_section .detail-box a {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #FF004D;
+  color: #ffffff;
+  border: 1px solid #FF004D;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+.slider_section .detail-box a:hover {
+  background-color: transparent;
+  color: #FF004D;
+}
+
+.slider_section .carousel_btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: -25px;
+  left: 5%;
+  padding: 7px 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.slider_section .carousel_btn-box img {
+  margin: 0 10px;
+}
+
+.slider_section .carousel_btn-box .carousel-control-prev,
+.slider_section .carousel_btn-box .carousel-control-next {
+  position: unset;
+  height: 25px;
+  width: 25px;
+  background-repeat: no-repeat;
+  opacity: 1;
+  background-position: center;
+  color: #000000;
+  font-size: 14px;
+}
+
+.shop_section .heading_container {
+  margin-bottom: 20px;
+}
+
+.shop_section .box {
+  background-color: #eeeeee;
+  position: relative;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.shop_section .box a {
+  color: #000000;
+}
+
+.shop_section .box .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 30px;
+  height: 245px;
+}
+
+.shop_section .box .img-box img {
+  max-width: 100%;
+  max-height: 145px;
+}
+
+.shop_section .box .detail-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shop_section .box .detail-box h6 span {
+  color: #FF004D;
+}
+
+.shop_section .box .new {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  font-size: 15px;
+}
+
+.shop_section .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px;
+}
+
+.shop_section .btn-box a {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #FF004D;
+  color: #ffffff;
+  border: 1px solid #FF004D;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.shop_section .btn-box a:hover {
+  background-color: transparent;
+  color: #FF004D;
+}
+
+.saving_section {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.saving_section .box {
+  padding-top: 45px;
+  background-color: #7fd7eb;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+.saving_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.saving_section .img-box {
+  padding: 15px 0 0 25px;
+}
+
+.saving_section .img-box img {
+  width: 100%;
+}
+
+.saving_section .detail-box {
+  padding: 0 25px;
+}
+
+.saving_section .detail-box p {
+  margin-top: 5px;
+}
+
+.saving_section .detail-box .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 35px -5px 0;
+}
+
+.saving_section .detail-box .btn-box a {
+  width: 165px;
+  text-align: center;
+  margin: 5px;
+}
+
+.saving_section .detail-box .btn-box .btn1 {
+  display: inline-block;
+  padding: 10px 0;
+  background-color: #109dbd;
+  color: #ffffff;
+  border: 1px solid #109dbd;
+  border-radius: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.saving_section .detail-box .btn-box .btn1:hover {
+  background-color: transparent;
+  color: #109dbd;
+}
+
+.saving_section .detail-box .btn-box .btn2 {
+  display: inline-block;
+  padding: 10px 0;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.saving_section .detail-box .btn-box .btn2:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.why_section .box {
+  text-align: center;
+  margin-top: 45px;
+  background-color: #f9f8f7;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.why_section .box .img-box {
+  margin-bottom: 15px;
+}
+
+.why_section .box .img-box svg {
+  width: 55px;
+  height: auto;
+  fill: #320b57;
+}
+
+.gift_section {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.gift_section .box {
+  background-color: #109dbd;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.gift_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gift_section .img-box {
+  padding: 60px 0 60px 25px;
+}
+
+.gift_section .img-box img {
+  width: 100%;
+}
+
+.gift_section .detail-box {
+  padding: 0 25px;
+}
+
+.gift_section .detail-box p {
+  margin-top: 5px;
+}
+
+.gift_section .detail-box .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 35px -5px 0;
+}
+
+.gift_section .detail-box .btn-box a {
+  width: 165px;
+  text-align: center;
+  margin: 5px;
+}
+
+.gift_section .detail-box .btn-box .btn1 {
+  display: inline-block;
+  padding: 10px 0;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.gift_section .detail-box .btn-box .btn1:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.gift_section .detail-box .btn-box .btn2 {
+  display: inline-block;
+  padding: 10px 0;
+  background-color: #FF004D;
+  color: #ffffff;
+  border: 1px solid #FF004D;
+  border-radius: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.gift_section .detail-box .btn-box .btn2:hover {
+  background-color: transparent;
+  color: #FF004D;
+}
+.contact_section {
+  position: relative;
+  padding: 60px 0;
+}
+
+.contact_section .container-bg {
+  -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact_section .heading_container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact_section .row {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact_section .col-lg-7,
+.contact_section .col-md-6 {
+  padding: 0;
+}
+
+.contact_section .map_container {
+  height: 100%;
+  width: 100%;
+  border-right: 5px solid #f0f0f0; /* Viền giữa map và form */
+}
+
+.contact_section .map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Tỷ lệ 16:9 cho map */
+  height: 0;
+}
+
+.contact_section .map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px 0 0 10px; /* Góc bo tròn */
+}
+
+.contact_section form {
+  padding: 45px 20px;
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm viền bóng */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact_section input,
+.contact_section textarea {
+  width: 100%;
+  border: 1px solid #919191;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-left: 25px;
+  background-color: transparent;
+  outline: none;
+  color: #101010;
+  border-radius: 5px; /* Thêm bo góc */
+}
+
+.contact_section input.message-box {
+  height: 120px;
+}
+
+.contact_section input::placeholder,
+.contact_section textarea::placeholder {
+  color: #131313;
+}
+
+.contact_section button {
+  display: inline-block;
+  padding: 12px 45px;
+  background-color: #FF004D;
+  color: #ffffff;
+  border: 1px solid #FF004D;
+  border-radius: 5px; /* Bo góc cho nút */
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  margin: 35px auto 0;
+  text-align: center;
+  width: 100%; /* Nút chiếm hết chiều ngang */
+}
+
+.contact_section button:hover {
+  background-color: transparent;
+  color: #FF004D;
+  border: 1px solid #FF004D;
+}
+
+@media (max-width: 768px) {
+  .contact_section .row {
+    flex-direction: column;
+  }
+
+  .contact_section .map-responsive {
+    padding-bottom: 0; /* Map sẽ chiếm 100% chiều cao khi màn hình nhỏ */
+    height: 300px; /* Đặt chiều cao cố định cho map */
+  }
+
+  .contact_section form {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.contact_section .row {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact_section .col-lg-7,
+.contact_section .col-md-6 {
+  flex: 1;
+  padding: 0;
+}
+
+.contact_section .map_container {
+  height: 100%;
+  width: 100%;
+}
+
+.contact_section .map-responsive {
+  position: relative;
+  height: 100%;
+}
+
+.contact_section .map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.contact_section form {
+  padding: 45px 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact_section .row {
+    flex-direction: column;
+  }
+
+  .contact_section .map-responsive {
+    height: 300px;
+  }
+
+  .contact_section form {
+    height: auto;
+  }
+}
+
+.client_section .heading_container {
+  margin-bottom: 20px;
+}
+
+.client_section .box {
+  margin: 15px 45px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  padding: 25px;
+}
+
+.client_section .box .client_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.client_section .box .client_info .client_name h5 {
+  font-weight: 600;
+  color: #FF004D;
+}
+
+.client_section .box .client_info .client_name h6 {
+  margin-bottom: 0;
+  color: #bfc0c0;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.client_section .box .client_info i {
+  font-size: 24px;
+}
+
+.client_section .box p {
+  margin-top: 15px;
+}
+
+.client_section .carousel-control-prev,
+.client_section .carousel-control-next {
+  width: 45px;
+  height: 125px;
+  background-color: #FF004D;
+  opacity: 1;
+  font-size: 28px;
+  font-weight: bold;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.client_section .carousel-control-prev {
+  left: 0;
+}
+
+.client_section .carousel-control-next {
+  right: 0;
+}
+
+/* info section */
+.info_section {
+  position: relative;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  margin: 0 45px 45px;
+}
+
+.info_section .social_container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.info_section .social_container .social_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info_section .social_container .social_box a {
+  margin: 0 10px;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.info_section .info_form form input {
+  outline: none;
+  width: 100%;
+  padding: 7px 10px;
+}
+
+.info_section .row > div {
+  margin-top: 25px;
+}
+
+.info_section a {
+  text-transform: none;
+}
+
+.info_section h6 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.info_section p {
+  color: #cbc9c9;
+}
+
+.info_section .info_link-box a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+}
+
+.info_section .info_link-box a:hover {
+  color: #ffffff;
+}
+
+.info_section .info_link-box a i {
+  color: #ffffff;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.info_section .info_link-box a span {
+  color: #cbc9c9;
+}
+
+.info_section .info_link-box a:hover span {
+  color: #ffffff;
+}
+.info_form h6 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff; /* Màu chữ giống phần giới thiệu */
+}
+
+.info_form ul {
+  padding-left: 20px;
+  list-style-type: none; /* Bỏ chấm đầu dòng */
+  margin-top: 10px;
+}
+
+.info_form li {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: #cbc9c9; /* Màu chữ giống phần giới thiệu */
+}
+
+.info_form li::before {
+  content: "\f041"; /* FontAwesome map-marker icon */
+  font-family: FontAwesome;
+  margin-right: 10px;
+  color: #FF004D; /* Màu biểu tượng nổi bật */
+}
+
+.info_form {
+  background-color: transparent; /* Không cần nền sáng */
+  padding: 0; /* Loại bỏ padding */
+  border-radius: 0; /* Không cần bo góc */
+  margin-bottom: 20px;
+}
+
+.info_form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333; /* Viền cùng màu với chữ */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #333; /* Màu chữ của input */
+}
+
+.info_form input::placeholder {
+  color: #777; /* Màu placeholder nhẹ nhàng */
+}
+
+.info_form button {
+  background-color: #333; /* Màu nút giống màu chữ */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.info_form button:hover {
+  background-color: #555; /* Thay đổi màu khi hover */
+}
+
+
+/* end info section */
+/* footer section*/
+.footer_section {
+  margin-top: 45px;
+  font-weight: 500;
+}
+
+.footer_section p {
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1.5px solid #eeeeee;
+  width: 80%;
+}
+
+.footer_section a {
+  color: #cbc9c9;
+}
+
+/* end footer section*/
+/*# sourceMappingURL=style.css.map */
