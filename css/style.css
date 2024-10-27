@@ -69,7 +69,7 @@ button[type="submit"] {
   width: calc(100% - 40px); /* Full width with margin */
   margin: 20px auto 0;
   padding: 10px;
-  background-color: #007bff;
+  background-color:#FF004D ;
   border: none;
   border-radius: 4px;
   color: white;
@@ -88,7 +88,11 @@ input[type="checkbox"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: transparent;
+  border-color: #FF004D;
+  color: #FF004D;
+  border: 2px solid #FF004D;
+  border-radius: 4px ;
 }
 
 /* nút đăng nhập và đăng ký */
